@@ -1,13 +1,15 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import StarField from './components/StarField';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import React, { Suspense } from 'react';
+
+const Projects = React.lazy(() => import('./components/Projects'));
 
 function App() {
   useEffect(() => {
@@ -50,7 +52,9 @@ function App() {
             <Hero />
             <About />
             <Skills />
-            <Projects />
+            <Suspense fallback={<div className="text-center py-10">Loading Projects...</div>}>
+              <Projects />
+            </Suspense>
             <Contact />
           </main>
           <Footer />
