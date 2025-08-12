@@ -8,8 +8,8 @@ const projects = [
     description: 'A modern food delivery website built with React which fetches live REST API data to dynamically render restaurant',
     image: '/food.png',
     tech: ['React.js', 'Tailwind CSS', 'JavaScript', "REST API", "Redux"],
-    liveUrl: 'https://fama-barber-two.vercel.app/',
-    githubUrl: 'https://github.com/rjritesh/Fama-Barber',
+    liveUrl: 'https://github.com/rjritesh/GrubGo',
+    githubUrl: 'https://grub-go-pi.vercel.app/',
   },
   {
     id: 2,
