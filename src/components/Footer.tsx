@@ -11,12 +11,11 @@ export default function Footer() {
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2 text-gray-600 dark:text-gray-400 text-sm sm:text-base text-center w-full">
             <div className="flex items-center space-x-2">
-              <span>© {currentYear} Ritesh Kumar Jha</span>
+              <span>© {currentYear} | Ritesh Kumar Jha |</span>
             </div>
             <div className="flex items-center space-x-2">
-              <span>Built with</span>
-              <FiHeart className="w-4 h-4 text-cosmic-magenta animate-pulse" />
-              <span>using React & Tailwind CSS</span>
+              
+              <span>All Rights Reserved</span>
             </div>
           </div>
           
